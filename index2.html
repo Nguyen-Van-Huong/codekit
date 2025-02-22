@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <!-- STYLE  -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet/less" type="text/css" href="styles2.less" />
+
+    <!-- FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="src/1. symbol.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="content">
+      <!-- Phía Trái -->
+      <div class="left-content">
+        <a href=""><i class="fa-duotone fa-solid fa-screwdriver-wrench"></i></a>
+        <a href=""><i class="fa-regular fa-folder-open"></i></a>
+        <a href=""><i class="fa-solid fa-file-circle-plus"></i></a>
+        <a href=""><i class="fa-solid fa-sliders"></i></a>
+        <a href=""><i class="fa-solid fa-language"></i></a>
+        <a href=""><i class="fa-regular fa-circle-question"></i></a>
+      </div>
+
+      <!-- Phía Phải -->
+      <div class="right-content">
+        <div class="header">
+          <div class="header logo-header">
+            <img src="src/xanh.png" alt="Logo" />
+          </div>
+          <div class="header menu-header">
+            <div class="left-toolbar toolbar">
+              <select class="btn dropdown">
+                <option>Arduino Uno</option>
+                <option>Arduino Nano</option>
+                <option>Arduino Mega</option>
+              </select>
+              <button class="btn upload">
+                <i class="fa-solid fa-right-long"></i>
+                Upload
+              </button>
+              <button class="btn blink">Blink</button>
+              <button class="btn export">Export</button>
+            </div>
+
+            <div class="right-toolbar toolbar">
+              <button class="btn clear">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+              <button class="btn undo">
+                <i class="fa-solid fa-undo"></i>
+              </button>
+              <button class="btn redo">
+                <i class="fa-solid fa-redo"></i>
+              </button>
+              <button class="btn hide-sidebar">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Hide Sidebar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="left-container">
+            <div class="panel">
+              <div class="block" data-content="Input-Output">
+                <i class="fa-solid fa-arrow-right" id="icon-1" ></i>
+                <span>Input/Output</span>
+              </div>
+              <div class="block" data-content="Sensors">
+                <i class="fa-solid fa-circle " id="icon-1"></i>
+                <span>Sensors</span>
+              </div>
+              <div class="block" data-content="Motion">
+                <i class="fa-solid fa-gears" id="icon-1"></i>
+                <span>Motion</span>
+              </div>
+              <div class="block" data-content="Control">
+                <i class="fa-solid fa-square" id="icon-2"></i>
+                <span>Control</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-chart-line" id="icon-3"></i>
+                <span>Logic</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-arrows-rotate" id="icon-4"></i>
+                <span>Loops</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-infinity" id="icon-5"></i>
+                <span>Math</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-a" id="icon-6"></i>
+                <span>Text</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-layer-group" id="icon-7"></i>
+                <span>Variables</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-regular fa-square" id="icon-8"></i>
+                <span>Functions</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-regular fa-message" id="icon-9"></i>
+                <span>Messaging</span>
+              </div>
+              <div class="block" data-content="Logic">
+                <i class="fa-solid fa-droplet" id="icon-10"></i>
+                <span>Color</span>
+              </div>
+            </div>
+            <div class="panel-open">
+              <div class="draggable-block" draggable="true">Block A</div>
+              <div class="draggable-block" draggable="true">Block B</div>
+              <div class="draggable-block" draggable="true">Block C</div>
+              <div class="draggable-block" draggable="true">Block C</div>
+            </div>
+            <div id="canvas"></div>
+          </div>
+          <div class="right-container"></div>
+        </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/less"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
