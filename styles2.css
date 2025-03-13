@@ -1,0 +1,140 @@
+:root {
+    --blue: #143980;
+    --white: #ffffff;
+    --red: #d92727;
+    --primary-color: #f1f1f1;
+    --black: #000;
+    --text-20: #cccccc;
+    --text-21: rgba(255, 255, 255, 0.9);
+    --text-22: #f7f7f8;
+    --text-23: #ea4191;
+    --text-24: #4c98ff;
+    --text-25: #8448ff;
+    --text-26: #4cc4ff;
+    --text-27: #12bd8c;
+    --text-28: #5ac05a;
+    --text-29: #ff8c19;
+    --text-30: #ffb700;
+    --text-31: #ff603c;
+    --text-32: #c026d3;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .content {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 65px auto;
+  }
+  
+  .left-content {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-right: 1px solid var(--text-20);
+    i {
+      color: var(--black);
+      font-size: 20px;
+      padding: 15px 0;
+    }
+  }
+  
+  .right-content {
+    display: grid;
+    grid-template-rows: 75px auto;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-header {
+    width: 230px;
+    img {
+      width: 230px;
+      height: 100%;
+    }
+  }
+  
+  .menu-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.2rem;
+    align-items: center;
+    height: 50px;
+    /* // border-top: 1px solid var(--text-20);
+    // border-left: 1px solid var(--text-20);
+    // border-right: 1px solid var(--text-20);
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
+    // background: var(--text-22); */
+  }
+  
+  .btn {
+    border: none;
+    box-shadow: inset 0 0 0 1px var(--text-20);
+    border-radius: 6px;
+    background-color: var(--white);
+    color: var(--black);
+    padding: 9px 12px;
+    font-size: 13px;
+    font-weight: 500;
+    font-family: sans-serif;
+    align-items: center;
+    line-height: 17px;
+    position: relative;
+    &:hover {
+      background-color: var(--primary-color);
+    }
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* height:100vh; */
+  }
+  
+  h2 {
+    text-align: center;
+  }
+  
+  .editor {
+    width: 100%;
+    gap: 20px;
+  }
+  
+  #blocklyArea {
+    flex: 1;
+  }
+  
+  .code-output {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  #generatedCode {
+    width: 100%;
+    height: 95.7%;
+  }
+  
