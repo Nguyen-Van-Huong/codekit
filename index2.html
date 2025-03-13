@@ -7,8 +7,8 @@
 
     <!-- STYLE  -->
     <!-- <link rel="stylesheet" href="style.css" /> -->
-    <link rel="stylesheet/less" type="text/css" href="styles2.less" />
-
+    <!-- <link rel="stylesheet/less" type="text/css" href="styles2.less" /> -->
+    <link rel="stylesheet" href="style.css" />
     <!-- FONT  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,6 +26,10 @@
       referrerpolicy="no-referrer"
     />
     <link rel="shortcut icon" href="src/1. symbol.ico" type="image/x-icon" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <script src="https://unpkg.com/blockly/blockly.min.js"></script>
+    <script src="https://unpkg.com/blockly/msg/en.js"></script>
+    <script src="https://unpkg.com/blockly/arduino_compressed.js"></script>
   </head>
   <body>
     <div class="content">
@@ -41,6 +45,7 @@
 
       <!-- Phía Phải -->
       <div class="right-content">
+        <!-- <div class="editor-background svelte-lx4hhi"></div> -->
         <div class="header">
           <div class="header logo-header">
             <img src="src/xanh.png" alt="Logo" />
@@ -79,68 +84,16 @@
         </div>
 
         <div class="container">
-          <div class="left-container">
-            <div class="panel">
-              <div class="block" data-content="Input-Output">
-                <i class="fa-solid fa-arrow-right" id="icon-1" ></i>
-                <span>Input/Output</span>
-              </div>
-              <div class="block" data-content="Sensors">
-                <i class="fa-solid fa-circle " id="icon-1"></i>
-                <span>Sensors</span>
-              </div>
-              <div class="block" data-content="Motion">
-                <i class="fa-solid fa-gears" id="icon-1"></i>
-                <span>Motion</span>
-              </div>
-              <div class="block" data-content="Control">
-                <i class="fa-solid fa-square" id="icon-2"></i>
-                <span>Control</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-chart-line" id="icon-3"></i>
-                <span>Logic</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-arrows-rotate" id="icon-4"></i>
-                <span>Loops</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-infinity" id="icon-5"></i>
-                <span>Math</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-a" id="icon-6"></i>
-                <span>Text</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-layer-group" id="icon-7"></i>
-                <span>Variables</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-regular fa-square" id="icon-8"></i>
-                <span>Functions</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-regular fa-message" id="icon-9"></i>
-                <span>Messaging</span>
-              </div>
-              <div class="block" data-content="Logic">
-                <i class="fa-solid fa-droplet" id="icon-10"></i>
-                <span>Color</span>
-              </div>
-            </div>
-            <div class="panel-open">
-              <div class="draggable-block" draggable="true">Block A</div>
-              <div class="draggable-block" draggable="true">Block B</div>
-              <div class="draggable-block" draggable="true">Block C</div>
-              <div class="draggable-block" draggable="true">Block C</div>
-            </div>
-            <div id="canvas"></div>
+          <!-- <h1>Blockly Block Factory Clone</h1> -->
+          <div class="editor">
+              <div id="blocklyArea"></div>
+              <div id="blocklyDiv" style="height: 100%; width: 100%"></div>
           </div>
-          <div class="right-container"></div>
+          <div class="code-output">
+              <h2>CODE ARDUINO</h2>
+              <textarea id="generatedCode" readonly></textarea>
+          </div>
         </div>
-
     <script src="https://cdn.jsdelivr.net/npm/less"></script>
     <script src="scripts.js"></script>
   </body>
